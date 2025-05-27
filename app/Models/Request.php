@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Request extends Model
 {
-    use HasFactory, SoftDeletes, StatusTrait;
+    use HasFactory, SoftDeletes;
 
     public const STATUS_PENDING = 'pending';
     public const STATUS_APPROVED = 'approved';

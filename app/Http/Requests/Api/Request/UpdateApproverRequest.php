@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Api\Approver;
+namespace App\Http\Requests\Api\Request;
 
 use App\Models\DepartmentApprover;
 use Illuminate\Foundation\Http\FormRequest;
@@ -9,7 +9,7 @@ class UpdateApproverRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return $this->user()->can('update', $this->route('approver'));
+        return true;
     }
 
     public function rules(): array

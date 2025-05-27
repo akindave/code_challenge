@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api\Approver;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\Approver\StoreApproverRequest;
-use App\Http\Requests\Api\Approver\UpdateApproverRequest;
+use App\Http\Requests\Api\Request\UpdateApproverRequest;
 use App\Http\Resources\ApproverResource;
 use App\Models\Department;
 use App\Models\DepartmentApprover;

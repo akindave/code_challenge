@@ -37,14 +37,14 @@ class ApprovalService
                 ]);
                 
                 // Notify next approver
-                Notification::send($nextApprovers->user, new RequestApprovedNotification($request));
+                // Notification::send($nextApprovers->user, new RequestApprovedNotification($request));
             } else {
                 $request->update([
                     'status' => Request::STATUS_APPROVED,
                 ]);
                 
                 // Notify requester
-                Notification::send($request->user, new RequestApprovedNotification($request));
+                // Notification::send($request->user, new RequestApprovedNotification($request));
             }
 
             return $request->fresh();
@@ -68,7 +68,7 @@ class ApprovalService
             ]);
 
             // Notify requester
-            Notification::send($request->user, new RequestRejectedNotification($request));
+            // Notification::send($request->user, new RequestRejectedNotification($request));
 
             return $request->fresh();
         });

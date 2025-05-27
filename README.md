@@ -16,6 +16,17 @@ A hierarchical approval workflow application where requests move through multipl
 ## Installation
 1. Clone the repository
 2. Copy `.env.docker` to `.env`
-3. Generate app key:
+3. Start container:
+   ```bash
+   docker-compose up -d --build
+4. Generate app key:
    ```bash
    docker-compose run app php artisan key:generate
+5. Run migrations and seeders:
+   ```bash
+   docker-compose exec app php artisan migrate --seed
+## Visit the link in your Browser or Postman
+
+# API: http://localhost:8000/api
+
+# Web: http://localhost:8000
