@@ -30,3 +30,20 @@ A hierarchical approval workflow application where requests move through multipl
 # API: http://localhost:8000/api
 
 # Web: http://localhost:8000
+
+## Postman Collection
+
+You can find the Postman API collection for this project here:
+
+👉 [Crown Interactive API Postman Collection](https://github.com/akindave/code_challenge/blob/main/Crown%20Interactive%20Api.postman_collection.json)
+
+## 📊 System Diagrams
+
+### 🧩 Initial ERD
+
+![Initial ERD](https://github.com/akindave/code_challenge/blob/main/public/Initial%20ERD.png?raw=true)
+
+### 🚀 Improved System Diagram
+
+![Advanced Improved System](https://github.com/akindave/code_challenge/blob/main/public/Advance_improved_system.png?raw=true)
+
